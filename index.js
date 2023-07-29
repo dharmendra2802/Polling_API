@@ -1,17 +1,21 @@
 const express = require('express');
 const db = require('./config/mongoose');
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser'); // body-parser to deal with req 
+ 
+// since we are going to host on render it will assign a port and if not
+// then 8000 will be assigned
 
+const PORT = process.env.PORT || 8000;
 
-const PORT = 8000;
+//initializing express
 const app = express();
 
 // request conversion
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
-app.use('/',require('./routes/question'));
+// redirecting to other route
+app.use('/',require('./routes/api/question'));
 
 app.listen(PORT,function(err){
     if(err)    
