@@ -1,12 +1,12 @@
 # Polling_API
 An API where anyone can ADD, DELETE, and VOTE questions
 # Introduction
-We can make various API request t0 - 
-1 - Add a question
-2 - Add an option
-3 - Delete an option
-4 - Delete a question
-5 - Add vote to options
+We can make various API requests to - <br> 
+1 - Add a question <br>
+2 - Add an option <br>
+3 - Delete an option <br>
+4 - Delete a question <br>
+5 - Add vote to options <br>
 
 #End Points
 ### 1 - To add a question - http://localhost:8000/questions/create
@@ -21,12 +21,12 @@ We can make various API request t0 -
         if the option of question contains a vote then we have add ' force=true' in the params as well 
         http://localhost:8000/questions/delete?id=12&force=true
 ### 5 - To delete an option - http://localhost:8000/questions/options/delete?id=#_#
-        id format - questionID_optionID
+        __ID format - questionID_optionID__
         we will send the id through param
         if the option contains a vote then we have add ' force=true' in the params as well 
         http://localhost:8000/questions/options/delete?id=#_#&force=true    
 ### 6 - To add a vote to the option - http://localhost:8000/questions/options/add_vote?id=#_#
-       id format - questionID_optionID
+       __id format - questionID_optionID__
        For example - if we want to delete the 2nd option from the question having QID 16 then
        http://localhost:8000/questions/options/add_vote?id=16_2
 
