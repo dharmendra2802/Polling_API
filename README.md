@@ -10,7 +10,7 @@ We can make various API requests to - <br>
 
 # End Points
 ### 1 - To add a question - http://localhost:8000/questions/create
-        we will send the question along with the question id through which we will identify the question for future ref
+        we will send the question along with the question id through <br>which we will identify the question for future ref
 ### 2 - To add an option - http://localhost:8000/questions/options/create?id=#
         we will send the id through param
 ### 3 - To view a question along with its options - http://localhost:8000/questions/?id=#
