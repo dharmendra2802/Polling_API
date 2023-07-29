@@ -21,12 +21,12 @@ We can make various API requests to - <br>
         if the option of question contains a vote then we have add ' force=true' in the params as well 
         http://localhost:8000/questions/delete?id=12&force=true
 ### 5 - To delete an option - http://localhost:8000/questions/options/delete?id=#_#
-        ** ID format - questionID_optionID **
+        ID format - questionID_optionID 
         we will send the id through param
         if the option contains a vote then we have add ' force=true' in the params as well 
         http://localhost:8000/questions/options/delete?id=#_#&force=true    
 ### 6 - To add a vote to the option - http://localhost:8000/questions/options/add_vote?id=#_#
-       **id format - questionID_optionID**
+       ID format - questionID_optionID
        For example - if we want to delete the 2nd option from the question having QID 16 then
        http://localhost:8000/questions/options/add_vote?id=16_2
 
