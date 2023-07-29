@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // redirecting to other route
-app.use('/',require('./routes/api/question'));
+app.use('/',require('./routes/home'));
 
 app.listen(PORT,function(err){
     if(err)    
